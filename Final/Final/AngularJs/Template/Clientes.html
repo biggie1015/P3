@@ -1,0 +1,42 @@
+﻿<div>
+    <center><h2>Registro de clientes</h2></center>
+</div>
+<div ng-controller="AgregarClientes">
+    <form>
+
+        <div class="form-group">
+            <div class="col-lg-4">
+                <label>Nombre</label>
+                <input type="text" class="form-control" ng-model="cliente.Nombre" name="Nombre" />
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <div class="col-lg-4">
+                <label>Apellido</label>
+                <input type="text" class="form-control" ng-model="cliente.Apellido" name="Apellido" />
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <div class="col-lg-4">
+                <label>Direccion</label>
+                <input type="text" class="form-control" ng-model="cliente.Direccion" name="Direccion" />
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <div class="col-lg-4">
+                <label>Telefono</label>
+                <input type="text" class="form-control" ng-model="cliente.Telefono" name="Telefono" />
+            </div>
+
+        </div>
+        <button type="submit" ng-click="SaveItem()" class="btn btn-primary">Submit</button>
+
+    </form>
+    {{enviado}}
+</div>

@@ -1,0 +1,42 @@
+﻿<div>
+    <center><h2>Registro de Empleados</h2></center>
+</div>
+<div ng-controller="AgregarEmpleados">
+    <form>
+
+        <div class="form-group">
+            <div class="col-lg-4">
+                <label>Nombre</label>
+                <input type="text" class="form-control" ng-model="Empleado.Nombre" name="Nombre" />
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <div class="col-lg-4">
+                <label>Apellido</label>
+                <input type="text" class="form-control" ng-model="Empleado.Apellido" name="Apellido" />
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <div class="col-lg-4">
+                <label>Direccion</label>
+                <input type="text" class="form-control" ng-model="Empleado.Direccion" name="Direccion" />
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <div class="col-lg-4">
+                <label>Telefono</label>
+                <input type="text" class="form-control" ng-model="Empleado.Telefono" name="Telefono" />
+            </div>
+
+        </div>
+        <button type="submit" ng-click="SaveItem()" class="btn btn-primary">Submit</button>
+
+    </form>
+    {{enviado}}
+</div>
